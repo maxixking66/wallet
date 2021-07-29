@@ -47,4 +47,10 @@ public class WalletRepositoryImpl extends BaseRepositoryImpl<Wallet, Long> imple
         return null;
     }
 
+    @Override
+    public Wallet findFirstByCustomerId(Long customerId) {
+//        get connection get wallet
+//        select * from wallet where customer_id = ?
+        return new Wallet();
+    }
 }

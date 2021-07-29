@@ -3,11 +3,11 @@ package ir.maktab56.domain;
 import ir.maktab56.base.domain.BaseEntity;
 import ir.maktab56.domain.enumeration.WalletLogType;
 
-import java.sql.Date;
+import java.time.LocalDateTime;
 
 public class WalletLog extends BaseEntity<Long> {
 
-    private Date createDate;
+    private LocalDateTime createDate;
 
     private WalletLogType logType;
 
@@ -46,11 +46,11 @@ public class WalletLog extends BaseEntity<Long> {
 
     private Long cashAmountChange;
 
-    public Date getCreateDate() {
+    public LocalDateTime getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(Date createDate) {
+    public void setCreateDate(LocalDateTime createDate) {
         this.createDate = createDate;
     }
 
