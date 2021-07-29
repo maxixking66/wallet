@@ -4,12 +4,12 @@ import ir.maktab56.base.domain.BaseEntity;
 import ir.maktab56.base.repository.BaseRepository;
 import ir.maktab56.base.service.BaseService;
 
-public class BaseServiceImpl<E extends BaseEntity<ID>, ID, Repository extends BaseRepository<E, ID>>
+public class BaseServiceImpl<E extends BaseEntity<ID>, ID, R extends BaseRepository<E, ID>>
         implements BaseService<E, ID> {
 
-    protected final Repository repository;
+    protected final R repository;
 
-    public BaseServiceImpl(Repository repository) {
+    public BaseServiceImpl(R repository) {
         this.repository = repository;
     }
 
