@@ -52,4 +52,9 @@ public class AdminRepositoryImpl extends BaseRepositoryImpl<Admin, Long>
     public Admin findById(Long aLong) {
         return null;
     }
+
+    @Override
+    public Boolean existsById(Long aLong) {
+        return null;
+    }
 }

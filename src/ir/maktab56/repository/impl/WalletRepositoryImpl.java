@@ -41,4 +41,10 @@ public class WalletRepositoryImpl extends BaseRepositoryImpl<Wallet, Long> imple
     public Wallet findById(Long aLong) {
         return null;
     }
+
+    @Override
+    public Boolean existsById(Long aLong) {
+        return null;
+    }
+
 }

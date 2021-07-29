@@ -41,4 +41,9 @@ public class CustomerRepositoryImpl extends BaseRepositoryImpl<Customer, Long> i
     public Customer findById(Long aLong) {
         return null;
     }
+
+    @Override
+    public Boolean existsById(Long aLong) {
+        return null;
+    }
 }

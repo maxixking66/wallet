@@ -19,4 +19,6 @@ public interface BaseRepository<E extends BaseEntity<ID>, ID> {
     void deleteById(ID id);
 
     E findById(ID id);
+
+    Boolean existsById(ID id);
 }
